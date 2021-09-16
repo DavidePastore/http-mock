@@ -14,7 +14,7 @@ class SerializableRequest extends Request implements Serializable
             'request' => $this->request,
             'query' => $this->query,
             'server' => $this->server,
-            'files' => $this->files,
+            //'files' => $this->files,
             'cookies' => $this->cookies,
             'headers' => $this->headers,
             'content' => $this->content,
@@ -43,7 +43,7 @@ class SerializableRequest extends Request implements Serializable
         $this->request = $attributes['request'];
         $this->query = $attributes['query'];
         $this->server = $attributes['server'];
-        $this->files = $attributes['files'];
+        //$this->files = $attributes['files'];
         $this->cookies = $attributes['cookies'];
         $this->headers = $attributes['headers'];
         $this->content = $attributes['content'];
